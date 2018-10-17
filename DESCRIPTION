@@ -1,7 +1,6 @@
 Package: egonet
 Type: Package
-Title: A small tool for Social Network Analysis, dealing with egocentric network measures, 
-  including Burt's effective size and aggregate constraint and an import code suitable for a large number of adjacency matrices.
+Title: Tool for ego-centric measures in Social Network Analysis
 Version: 1.2
 Date: 2018-10-17
 Author: (Andrea Sciandra, Livio Finos).
