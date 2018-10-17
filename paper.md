@@ -14,7 +14,7 @@ authors:
    orcid: 0000-0003-3181-8078
    affiliation: 2
 affiliations:
- - name: name: STAR.Lab - Socio Territorial Analysis and Research, University of Padova
+ - name: STAR.Lab - Socio Territorial Analysis and Research, University of Padova
    index: 1
  - name: Department of Developmental Psychology and Socialisation, University of Padova
    index: 2
