@@ -12,8 +12,9 @@
 #' 
 #' Maintainer: livio finos <livio@stat.unipd.it>
 #' @keywords package
+#'
 #' @examples
-
+#'
 #' ##This is a list of file' names containing the ego-network
 #' ff <- c("q1.csv","q2.csv","q3.csv")
 #' files  <- paste("http://www.egonet.associazionerospo.org/egonetdata/",ff,sep="")
@@ -48,7 +49,7 @@
 #' #now merge demographic informations with the indices
 #' data <- merge(data,idx,by="filename")
 #' data
-#' 
+#'
 #' #Compute the \code{effsize} and \code{constraint} to the restricted network with "EGO" and nodes with "P" in the name (i.e. the relatives social circle)
 #' idx <- sapply(mats,index.egonet, subset = "P",index = c("effsize","constraint"))
 #' rownames(idx) <- paste(rownames(idx),"P",sep=".")
@@ -58,3 +59,4 @@
 #' #and merge them to the dataset
 #' data <- merge(data,idx,by="filename")
 #' data
+#' @export 
