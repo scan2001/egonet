@@ -1,0 +1,14 @@
+Package: egonet
+Type: Package
+Title: A small tool for Social Network Analysis, dealing with ego-centred network measures, 
+  including Burt's effective size and aggregate constraint and an import code suitable for a large number of adjacency matrices.
+Version: 1.2
+Date: 2018-10-17
+Author: (Andrea Sciandra, Livio Finos).
+Maintainer: livio finos <livio@stat.unipd.it>
+Depends:
+    R (>= 3.5.0),
+    sna
+Description: A small tool for Social Network Analysis, dealing with ego-centred network measures, 
+  including Burt's effective size and aggregate constraint and an import code suitable for a large number of adjacency matrices.
+License: GPL (>= 2)
