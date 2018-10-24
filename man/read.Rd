@@ -8,7 +8,7 @@
 \usage{
 read.egonet(file, sep=",", dec=".", ego.name="EGO")
 %arguments{
-  \item{file}{ 	the name of the file which the data are to be read from. 
+\item{file}{ 	the name of the file which the data are to be read from. 
   It must be a square matrix, with node's names in the first row and column.
   See also \code{file} of \code{\link[read.table:stats-package]{read.table}}
 }
@@ -42,3 +42,4 @@ dat
 % R documentation directory.
 \keyword{ file }
 \keyword{ datagen }% __ONLY ONE__ keyword per line
+}
