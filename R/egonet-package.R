@@ -58,3 +58,4 @@
 #' data <- merge(data,idx,by="filename")
 #' data
 #' @export 
+#' @import sna

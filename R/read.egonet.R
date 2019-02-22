@@ -23,7 +23,7 @@
 #' 
 #' @export read.egonet
 read.egonet <- function(file, sep=",", dec=".", ego.name="EGO") {
-dat <- read.csv(file, header=T, sep= sep )
+dat <- utils::read.csv(file, header=T, sep= sep )
 dat <- dat[!is.na(dat[,ego.name]), , drop = FALSE]
 
 rownms <- dat[,1]
