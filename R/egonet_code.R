@@ -77,14 +77,14 @@ index.egonet <- function( dat, index= list("effsize","constraint","outdegree","i
   ris <- rep(NA,length(index))
   names(ris) <- names(index)
   names(ris)[names(ris)==""] <- index[names(ris)==""]
-  require("sna")
-  library(sna)
+  # require("sna")
+  # library(sna)
   for(h in 1:length(index)){
     if(is.call(index[[h]])) {
 	    ris[h] <- eval(index[[h]],envir =.GlobalEnv)
 	    names(ris)[h] <- names(index)[h] }
     else  ris[h] <- switch (unlist(index[[h]]),
-      outdegree = {grado <- degree(dat, cmode="outdegree"); as.matrix(grado[ego.id])},
+      outdegree = {grado <- sna::degree(dat, cmode="outdegree"); as.matrix(grado[ego.id])},
 	  indegree = {grado <- degree(dat, cmode="indegree"); as.matrix(grado[ego.id])},
       efficiency = efficiency(dat),
       hierarchy = hierarchy(dat),

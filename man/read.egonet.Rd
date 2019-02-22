@@ -30,7 +30,7 @@ Reads text table and creates ego-centric graph from it, with the ego actor in th
 }
 \examples{
 
-dat <- read.egonet(system.file("extdata", "q1.csv", package="ARI"))
+dat <- read.egonet(system.file("extdata", "q1.csv", package="egonet"))
 dat
 
 }

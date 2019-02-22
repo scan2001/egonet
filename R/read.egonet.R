@@ -18,7 +18,7 @@
 #' @keywords ~kwd1 ~kwd2
 #' @examples
 #' 
-#' dat <- read.egonet(system.file("extdata", "q1.csv", package="ARI"))
+#' dat <- read.egonet(system.file("extdata", "q1.csv", package="egonet"))
 #' dat
 #' 
 #' @export read.egonet
