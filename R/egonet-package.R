@@ -1,7 +1,5 @@
 #' A package for egocentric measures in Social Network Analysis
-#' 
-#' A package for egocentric measures in Social Network Analysis
-#' 
+#'  
 #' \tabular{ll}{ Package: \tab egonet\cr Type: \tab Package\cr Version:
 #' \tab 1.2\cr Date: \tab 2018-10-18\cr License: GPL (>= 2) }
 #' 
@@ -17,14 +15,14 @@
 #'
 #' ##This is a list of file' names containing the ego-network
 #' ff <- c("q1.csv","q2.csv","q3.csv")
-#' files  <- paste("http://www.egonet.associazionerospo.org/egonetdata/",ff,sep="")
+#' files  <- sapply(ff, function(fl)system.file("extdata", fl, package="egonet"))
 #' names(files) <- ff
 #' 
 #' ##if all your data are in a directory (eg. egonets, containing all files with the same extension), 
 #' ##you can easily get this list with the following commands
-#' #' ff <- dir("./egonets",pattern=".csv")
-#' #' files  <- paste("./egonets/",ff,sep="")
-#' #' names(files) <- ff
+#' # ff <- dir("yourpath",pattern=".csv")
+#' # files  <- dir("yourpath",pattern=".csv",full.names = TRUE)
+#' # names(files) <- ff
 #' 
 #' 
 #' #Here is a dataset with demographic informations and the names of files containing the ego-network
